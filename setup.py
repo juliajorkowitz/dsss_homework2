@@ -2,13 +2,16 @@ from setuptools import setup, find_packages
 
 setup(
     name="math_quiz",
-    version="0.1",
+    version="0.1.0",
+    description="Math quiz game",
+    author="Julia Jorkowitz",
+    author_email="julia.jorkowitz@fau.de",
+    url="https://github.com/juliajorkowitz/dsss_homework2.git",
     packages=find_packages(),
-    include_package_data=True,
-    install_requires=[],
-    entry_points={
-        "console_scripts": [
-            "math_quiz=math_quiz.math_quiz:math_quiz",  # `main` should be the entry function in `math_quiz.py`
-        ],
-    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
