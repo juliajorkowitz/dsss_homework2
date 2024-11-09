@@ -14,4 +14,10 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    install_requires=[],  # List any dependencies your project needs, e.g., numpy
+    entry_points={
+        "console_scripts": [
+            "math_quiz=math_quiz.math_quiz:math_quiz",  # Ensure this matches the function name in `math_quiz.py`
+        ],
+    },
 )
